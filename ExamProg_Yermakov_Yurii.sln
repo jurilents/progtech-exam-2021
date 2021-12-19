@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamProg.Tests", "ExamProg.Tests\ExamProg.Tests.csproj", "{493B85A0-15F6-452B-AD27-F5DF96E6E558}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamProg.WebApi", "ExamProg.WebApi\ExamProg.WebApi.csproj", "{FDFDADB7-9A03-4EE9-8125-95D99B155B6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{493B85A0-15F6-452B-AD27-F5DF96E6E558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{493B85A0-15F6-452B-AD27-F5DF96E6E558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{493B85A0-15F6-452B-AD27-F5DF96E6E558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{493B85A0-15F6-452B-AD27-F5DF96E6E558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDFDADB7-9A03-4EE9-8125-95D99B155B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDFDADB7-9A03-4EE9-8125-95D99B155B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDFDADB7-9A03-4EE9-8125-95D99B155B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDFDADB7-9A03-4EE9-8125-95D99B155B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
