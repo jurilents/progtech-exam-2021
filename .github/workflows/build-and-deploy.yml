@@ -22,14 +22,11 @@ jobs:
       - name: Restore
         run: dotnet restore
 
-      - name: Build
-        run: dotnet build --no-restore
-
       - name: Test
         run: dotnet test --no-restore --verbosity normal
 
       - name: Publish app for deploy
-        run: dotnet publish --no-build -c Release -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+        run: dotnet publish -c Release -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
       - name: Deploy to Azure WebApp
         uses: azure/webapps-deploy@v2
