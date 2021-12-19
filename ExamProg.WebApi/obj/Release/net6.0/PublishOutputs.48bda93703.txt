@@ -1,0 +1,10 @@
+C:\Users\Developer\AppData\Local\Temp\rider-publish524557290351224654\ExamProg.WebApi.exe
+C:\Users\Developer\AppData\Local\Temp\rider-publish524557290351224654\appsettings.json
+C:\Users\Developer\AppData\Local\Temp\rider-publish524557290351224654\ExamProg.WebApi.dll
+C:\Users\Developer\AppData\Local\Temp\rider-publish524557290351224654\ExamProg.WebApi.deps.json
+C:\Users\Developer\AppData\Local\Temp\rider-publish524557290351224654\ExamProg.WebApi.runtimeconfig.json
+C:\Users\Developer\AppData\Local\Temp\rider-publish524557290351224654\ExamProg.WebApi.pdb
+C:\Users\Developer\AppData\Local\Temp\rider-publish524557290351224654\Microsoft.OpenApi.dll
+C:\Users\Developer\AppData\Local\Temp\rider-publish524557290351224654\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Developer\AppData\Local\Temp\rider-publish524557290351224654\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Developer\AppData\Local\Temp\rider-publish524557290351224654\Swashbuckle.AspNetCore.SwaggerUI.dll

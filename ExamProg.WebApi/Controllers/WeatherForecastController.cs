@@ -15,6 +15,12 @@ public class WeatherForecastController : ControllerBase
 	}
 
 
+	[HttpGet("Version")]
+	public string GetVersion()
+	{
+		return "v1.0";
+	}
+
 	[HttpGet]
 	public IEnumerable<WeatherForecast> Get(int count = 5)
 	{
