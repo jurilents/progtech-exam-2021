@@ -1,14 +1,27 @@
-﻿namespace ExamProg.WebApi.Services;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
-public class MathService
+namespace ExamProg.WebApi.Services
 {
-	public IEnumerable<int> ArithmeticProgression(int a = 3,int d = 2)
+	public class MathService
 	{
-		int sum = 0;
-		for (; a <= d; a++)
+		public int ArithmeticProgression(int n)
 		{
-			sum += a;
-			yield return sum;
+			if (n <= 0)
+				throw new ArgumentException("Element index must be greater then 0.", nameof(n));
+
+			const int d = 2;
+			const int a = 3;
+			return a + (n - 1) * d;
+		}
+
+		public int FindMax(IEnumerable<int> array)
+		{
+			if (array is null)
+				throw new ArgumentNullException(nameof(array));
+
+			return array.Max();
 		}
 	}
 }

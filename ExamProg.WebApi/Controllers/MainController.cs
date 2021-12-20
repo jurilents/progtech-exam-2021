@@ -1,28 +1,34 @@
 ﻿using ExamProg.WebApi.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ExamProg.WebApi.Controllers;
-
-[ApiController]
-[Route("/")]
-public class MainController : ControllerBase
+namespace ExamProg.WebApi.Controllers
 {
-	private readonly MathService mathService;
-	public MainController(MathService mathService)
+	[ApiController]
+	[Route("/")]
+	public class MainController : ControllerBase
 	{
-		this.mathService = mathService;
-	}
+		private readonly MathService mathService;
 
-	[HttpGet]
-	[ApiExplorerSettings(IgnoreApi = true)]
-	public IActionResult Get()
-	{
-		return Redirect("/swagger");
-	}
+		public MainController(MathService mathService)
+		{
+			this.mathService = mathService;
+		}
 
-	[HttpGet("task")]
-	public IEnumerable<int> Task(int a = 3, int d = 2)
-	{
-		return this.mathService.ArithmeticProgression(a, d).ToList();
+		[HttpGet]
+		[ApiExplorerSettings(IgnoreApi = true)]
+		public IActionResult Get()
+		{
+			return Redirect("/swagger");
+		}
+
+		[HttpGet("task")]
+		public ActionResult Task(int n)
+		{
+			return Ok(new
+			{
+					Author = "Yermakov Yurii",
+					Result = this.mathService.ArithmeticProgression(n)
+			});
+		}
 	}
-}м
+}
