@@ -7,13 +7,13 @@ using Xunit;
 
 namespace ExamProg.Tests;
 
-public class WeatherForecastServiceTests
+public class MathServiceTests
 {
-	private readonly WeatherForecastService weatherForecastService;
+	private readonly MathService mathService;
 
-	public WeatherForecastServiceTests()
+	public MathServiceTests()
 	{
-		weatherForecastService = new WeatherForecastService();
+		mathService = new MathService();
 	}
 
 	[Fact]
@@ -23,7 +23,7 @@ public class WeatherForecastServiceTests
 		int count = 10;
 
 		// act
-		IEnumerable<WeatherForecast> result = this.weatherForecastService.GetRandom(count);
+		IEnumerable<WeatherForecast> result = this.mathService.GetRandom(count);
 
 		// assert
 		Assert.Equal(result.Count(), count);
@@ -34,6 +34,6 @@ public class WeatherForecastServiceTests
 	{
 		int count = -10;
 
-		Assert.Throws<ArgumentException>(() => this.weatherForecastService.GetRandom(count));
+		Assert.Throws<ArgumentException>(() => this.mathService.GetRandom(count));
 	}
 }
