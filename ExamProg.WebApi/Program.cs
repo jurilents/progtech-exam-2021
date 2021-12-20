@@ -24,5 +24,3 @@ app.UseSwaggerUI();
 app.MapControllers();
 
 app.Run();
-
-// other 2222222222
