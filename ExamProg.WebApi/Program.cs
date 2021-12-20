@@ -23,8 +23,6 @@ app.UseSwaggerUI();
 
 app.MapControllers();
 
-// master
-
 app.Run();
 
-// master
+// other
